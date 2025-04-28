@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-matlab-executor"
+version = "0.1.0"
+description = "MCP tool for safely executing MATLAB functions, scripts, and commands"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Claude User"}
+]
+dependencies = [
+    "mcp>=1.2.0",
+    "tkinter",
+    "python-dotenv",
+]
+readme = "README.md"
+
+[project.scripts]
+mcp-matlab-executor = "mcp_matlab_executor:main"
+
+[tool.setuptools]
+packages = ["mcp_matlab_executor"]

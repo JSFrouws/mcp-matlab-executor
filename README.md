@@ -43,7 +43,10 @@ Add to Claude Desktop configuration file:
 {
   "mcpServers": {
     "matlab-executor": {
-      "command": "mcp-matlab-executor",
+      "command": "uvx",
+      "args": [
+        "run", "git+https://github.com/JSFrouws/mcp-matlab-executor.git"
+      ],
       "env": {
         "MATLAB_PATH": "C:/Program Files/MATLAB/R2022b/bin"
       }

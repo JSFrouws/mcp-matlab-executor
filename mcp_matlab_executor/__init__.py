@@ -6,7 +6,11 @@ import os
 import sys
 import asyncio
 import subprocess
-import tkinter as tk
+try:
+    import tkinter as tk
+except ImportError:
+    print("Warning: tkinter not available. Using fallback prompt mechanism.")
+    tk = None
 from threading import Thread
 import logging
 from typing import Dict

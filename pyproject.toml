@@ -13,7 +13,6 @@ authors = [
 ]
 dependencies = [
     "mcp>=1.2.0",
-    "tkinter",
     "python-dotenv",
 ]
 readme = "README.md"
